@@ -9,37 +9,46 @@ st.title("Sales Dashboard")
 # ------------------ Database Connection ------------------
 
 st.sidebar.header("Database Connection")
-server = st.sidebar.text_input("Server", r"LAPTOP-RO8RV296\SQLEXPRESS")
+
+# Default to localhost for local Windows SQL Server
+
+server = st.sidebar.text_input("Server", r"localhost\SQLEXPRESS")
 database = st.sidebar.text_input("Database", "SalesDB")
 
 conn_str = (
-    "DRIVER={ODBC Driver 17 for SQL Server};"
-    "SERVER=localhost\\SQLEXPRESS;"
-    "DATABASE=SalesDB;"
-    "UID=sa;"
-    "PWD=priti@1060;"
+"DRIVER={ODBC Driver 17 for SQL Server};"
+f"SERVER={server};"
+f"DATABASE={database};"
+"Trusted_Connection=yes;"
 )
-
-
 
 # Test connection
 
+# Test connection
 try:
     conn = pyodbc.connect(conn_str, timeout=5)
-    st.success("Connected to SQL Server successfully!")
+    st.success(f"Connected to SQL Server at {server} successfully!")
 except Exception as e:
-    st.error(f"Connection failed: {e}")
+    st.error(
+        f"Connection failed! Make sure SQL Server is running, TCP/IP is enabled, "
+        f"and firewall allows connections.\n\nError details: {e}"
+    )
     st.stop()  # Stop the app if connection fails
+
 
 # ------------------ Load Data ------------------
 
 query = "SELECT * FROM MyTable;"
+try:
 df = pd.read_sql(query, conn)
+except Exception as e:
+st.error(f"Failed to load data from table 'MyTable'.\nError: {e}")
+st.stop()
 
 # Fix column names and data
 
 df.columns = df.columns.str.strip().str.replace(" ", "_")
-df['Order_Date'] = pd.to_datetime(df['Order_Date'])
+df['Order_Date'] = pd.to_datetime(df['Order_Date'], errors='coerce')
 df = df.dropna()
 
 # ------------------ Key Metrics ------------------
@@ -83,8 +92,6 @@ st.bar_chart(region_perf)
 st.header("ABC Analysis")
 df_product = df.groupby('Product_Name')['Total_Amount'].sum().sort_values(ascending=False)
 cum_percent = df_product.cumsum() / df_product.sum() * 100
-ABC = pd.cut(cum_percent, bins=[0,80,95,100], labels=['A','B','C'])
+ABC = pd.cut(cum_percent, bins=[0, 80, 95, 100], labels=['A','B','C'])
 abc_df = pd.DataFrame({"Sales": df_product, "Class": ABC})
 st.dataframe(abc_df.head(15))
-
-
