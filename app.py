@@ -16,8 +16,10 @@ conn_str = (
     "DRIVER={ODBC Driver 17 for SQL Server};"
     "SERVER=localhost\\SQLEXPRESS;"
     "DATABASE=SalesDB;"
-    "Trusted_Connection=yes;"
+    "UID=sa;"
+    "PWD=priti@1060;"
 )
+
 
 
 # Test connection
@@ -84,4 +86,5 @@ cum_percent = df_product.cumsum() / df_product.sum() * 100
 ABC = pd.cut(cum_percent, bins=[0,80,95,100], labels=['A','B','C'])
 abc_df = pd.DataFrame({"Sales": df_product, "Class": ABC})
 st.dataframe(abc_df.head(15))
+
 
