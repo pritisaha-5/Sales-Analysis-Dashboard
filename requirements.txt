@@ -2,4 +2,5 @@ pandas
 matplotlib
 numpy
 streamlit
+pyodbc
 openpyxl
