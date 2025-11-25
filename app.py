@@ -28,30 +28,27 @@ f"DATABASE={database};"
 
 # ------------------ Test SQL Server Connection ------------------
 
-# Correct
 try:
     conn = pyodbc.connect(conn_str, timeout=5)
-    st.success("Connected!")
+    st.success(f"✅ Connected to SQL Server at {server} successfully!")
 
-```
-# Optional: List tables for debugging
-cursor = conn.cursor()
-cursor.execute("SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE='BASE TABLE';")
-tables = [row[0] for row in cursor.fetchall()]
-st.sidebar.write("Tables in database:", tables)
-```
+    # Optional: List tables for debugging
+    cursor = conn.cursor()
+    cursor.execute("SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE='BASE TABLE';")
+    tables = [row[0] for row in cursor.fetchall()]
+    st.sidebar.write("Tables in database:", tables)
 
 except Exception as e:
-st.error(
-"❌ Connection failed!\n\n"
-"Please check the following:\n"
-"1. SQL Server service is running.\n"
-"2. TCP/IP is enabled.\n"
-"3. Firewall allows connections on port 1433.\n"
-"4. Correct server name is used (e.g., localhost\SQLEXPRESS).\n\n"
-f"Error details:\n{e}"
-)
-st.stop()
+    st.error(
+        "❌ Connection failed!\n\n"
+        "Please check the following:\n"
+        "1. SQL Server service is running.\n"
+        "2. TCP/IP is enabled.\n"
+        "3. Firewall allows connections on port 1433.\n"
+        "4. Correct server name is used (e.g., localhost\\SQLEXPRESS).\n\n"
+        f"Error details:\n{e}"
+    )
+    st.stop()
 
 # ------------------ Load Data ------------------
 
@@ -121,4 +118,5 @@ cum_percent = df_product.cumsum() / df_product.sum() * 100
 ABC = pd.cut(cum_percent, bins=[0, 80, 95, 100], labels=['A','B','C'])
 abc_df = pd.DataFrame({"Sales": df_product, "Class": ABC})
 st.dataframe(abc_df.head(15))
+
 
