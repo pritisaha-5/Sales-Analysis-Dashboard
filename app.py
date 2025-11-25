@@ -10,10 +10,11 @@ st.title("Sales Dashboard")
 # ------------------ Database Connection ------------------
 st.sidebar.header("Database Connection")
 
-# Use raw string or double backslash for server name
+# Default SQL Server Express on your laptop
 server = st.sidebar.text_input("Server", r"localhost\SQLEXPRESS")
 database = st.sidebar.text_input("Database", "SalesDB")
 
+# Connection string using Windows Authentication
 conn_str = (
     "DRIVER={ODBC Driver 17 for SQL Server};"
     f"SERVER={server};"
@@ -21,18 +22,18 @@ conn_str = (
     "Trusted_Connection=yes;"
 )
 
-# Test connection with detailed error messages
+# ------------------ Test SQL Server Connection ------------------
 try:
     conn = pyodbc.connect(conn_str, timeout=5)
-    st.success(f"Connected to SQL Server at {server} successfully!")
+    st.success(f"✅ Connected to SQL Server at {server} successfully!")
 except Exception as e:
     st.error(
-        f"Connection failed!\n\n"
+        "❌ Connection failed!\n\n"
         "Please check the following:\n"
-        "1. SQL Server service is running.\n"
+        "1. SQL Server service is running (services.msc).\n"
         "2. TCP/IP is enabled in SQL Server Configuration Manager.\n"
         "3. Firewall allows inbound connections on TCP port 1433.\n"
-        "4. You are using the correct server name and instance.\n\n"
+        "4. You are using the correct server name (localhost\\SQLEXPRESS).\n\n"
         f"Error details:\n{e}"
     )
     st.stop()  # Stop the app if connection fails
