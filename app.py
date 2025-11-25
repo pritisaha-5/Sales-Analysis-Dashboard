@@ -3,42 +3,39 @@ import pandas as pd
 import pyodbc
 import matplotlib.pyplot as plt
 
+# ------------------- Page Setup -------------------
 st.set_page_config(page_title="Sales Dashboard", layout="wide")
 st.title("Sales Dashboard")
 
 # ------------------ Database Connection ------------------
-
 st.sidebar.header("Database Connection")
 
-# Default to localhost for local Windows SQL Server
-
+# Use raw string or double backslash for server name
 server = st.sidebar.text_input("Server", r"localhost\SQLEXPRESS")
 database = st.sidebar.text_input("Database", "SalesDB")
 
 conn_str = (
     "DRIVER={ODBC Driver 17 for SQL Server};"
-    "SERVER=localhost\\SQLEXPRESS;"  # double backslash
-    "DATABASE=SalesDB;"
+    f"SERVER={server};"
+    f"DATABASE={database};"
     "Trusted_Connection=yes;"
 )
 
-
-
-# Test connection
-
-# Test connection
+# Test connection with detailed error messages
 try:
     conn = pyodbc.connect(conn_str, timeout=5)
     st.success(f"Connected to SQL Server at {server} successfully!")
 except Exception as e:
     st.error(
-        f"Connection failed! Make sure SQL Server is running, TCP/IP is enabled, "
-        f"and firewall allows connections.\n\nError details: {e}"
+        f"Connection failed!\n\n"
+        "Please check the following:\n"
+        "1. SQL Server service is running.\n"
+        "2. TCP/IP is enabled in SQL Server Configuration Manager.\n"
+        "3. Firewall allows inbound connections on TCP port 1433.\n"
+        "4. You are using the correct server name and instance.\n\n"
+        f"Error details:\n{e}"
     )
     st.stop()  # Stop the app if connection fails
-
-
-# ------------------ Load Data ------------------
 
 # ------------------ Load Data ------------------
 query = "SELECT * FROM MyTable;"
@@ -48,14 +45,12 @@ except Exception as e:
     st.error(f"Failed to load data from table 'MyTable'.\nError: {e}")
     st.stop()
 
-# Fix column names and data
-
+# ------------------ Clean Data ------------------
 df.columns = df.columns.str.strip().str.replace(" ", "_")
 df['Order_Date'] = pd.to_datetime(df['Order_Date'], errors='coerce')
 df = df.dropna()
 
 # ------------------ Key Metrics ------------------
-
 st.header("Key Metrics")
 total_sales = df['Total_Amount'].sum()
 avg_order_value = df['Total_Amount'].mean()
@@ -70,7 +65,6 @@ col3.metric("Total Customers", total_customers)
 col4.metric("Repeat Customers", repeat_customers)
 
 # ------------------ Monthly Sales ------------------
-
 st.header("Monthly Sales Trend")
 df['Month'] = df['Order_Date'].dt.to_period('M')
 monthly_sales = df.groupby('Month')['Total_Amount'].sum()
@@ -79,25 +73,19 @@ monthly_sales.plot(ax=ax, title="Monthly Sales Trend")
 st.pyplot(fig)
 
 # ------------------ Top Products ------------------
-
 st.header("Top 10 Products")
 top_products = df.groupby('Product_Name')['Total_Amount'].sum().sort_values(ascending=False).head(10)
 st.bar_chart(top_products)
 
 # ------------------ Regional Performance ------------------
-
 st.header("Sales by Region")
 region_perf = df.groupby('Region')['Total_Amount'].sum()
 st.bar_chart(region_perf)
 
 # ------------------ ABC Analysis ------------------
-
 st.header("ABC Analysis")
 df_product = df.groupby('Product_Name')['Total_Amount'].sum().sort_values(ascending=False)
 cum_percent = df_product.cumsum() / df_product.sum() * 100
 ABC = pd.cut(cum_percent, bins=[0, 80, 95, 100], labels=['A','B','C'])
 abc_df = pd.DataFrame({"Sales": df_product, "Class": ABC})
 st.dataframe(abc_df.head(15))
-
-
-
