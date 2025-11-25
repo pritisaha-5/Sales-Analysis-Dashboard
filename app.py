@@ -20,11 +20,12 @@ f"DATABASE={database};"
 )
 
 try:
-conn = pyodbc.connect(conn_str)
-st.success("Connected to database successfully!")
+    conn = pyodbc.connect(conn_str)
+    st.success("Connected to database successfully!")
 except Exception as e:
-st.error(f"Connection failed: {e}")
-st.stop()
+    st.error(f"Connection failed: {e}")
+    st.stop()
+
 
 # ------------------ Load Data ------------------
 
@@ -81,3 +82,4 @@ cum_percent = df_product.cumsum() / df_product.sum() * 100
 ABC = pd.cut(cum_percent, bins=[0,80,95,100], labels=['A','B','C'])
 abc_df = pd.DataFrame({"Sales": df_product, "Class": ABC})
 st.dataframe(abc_df.head(15))
+
