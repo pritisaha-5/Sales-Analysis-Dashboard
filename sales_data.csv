@@ -1,0 +1,501 @@
+Order_ID,Order_Date,Customer_ID,Region,Product_Category,Product_Name,Quantity,Unit_Price,Total_Amount
+1001,21-01-2023,CUST714,South,Accessories,Wallet,5,3972,19860
+1002,10-04-2023,CUST971,West,Accessories,Belt,3,3644,10932
+1003,29-03-2023,CUST591,South,Accessories,Bag,5,969,4845
+1004,27-02-2023,CUST121,North,Clothing,Jeans,4,1384,5536
+1005,28-02-2023,CUST610,South,Home Appliances,Mixer,1,674,674
+1006,15-01-2023,CUST289,South,Home Appliances,Microwave,4,1175,4700
+1007,24-02-2023,CUST343,West,Accessories,Bag,3,2099,6297
+1008,15-05-2023,CUST120,North,Electronics,Tablet,5,4090,20450
+1009,01-03-2023,CUST113,South,Accessories,Bag,4,800,3200
+1010,10-05-2023,CUST439,West,Clothing,Shirt,2,2812,5624
+1011,08-01-2023,CUST134,South,Accessories,Wallet,4,2756,11024
+1012,12-05-2023,CUST101,South,Electronics,Headphones,2,4143,8286
+1013,23-02-2023,CUST576,East,Clothing,Jeans,2,4043,8086
+1014,09-07-2023,CUST369,East,Clothing,Jeans,4,361,1444
+1015,09-07-2023,CUST395,North,Home Appliances,Refrigerator,4,1216,4864
+1016,22-02-2023,CUST891,South,Home Appliances,Mixer,2,1078,2156
+1017,10-02-2023,CUST256,East,Electronics,Headphones,4,579,2316
+1018,29-03-2023,CUST228,West,Electronics,Laptop,1,2768,2768
+1019,12-06-2023,CUST518,North,Home Appliances,Microwave,3,591,1773
+1020,10-02-2023,CUST127,East,Accessories,Watch,2,2478,4956
+1021,17-02-2023,CUST602,East,Electronics,Headphones,4,3304,13216
+1022,14-04-2023,CUST825,East,Clothing,T-Shirt,5,2931,14655
+1023,01-01-2023,CUST104,South,Accessories,Watch,3,2890,8670
+1024,15-01-2023,CUST957,South,Accessories,Belt,3,4688,14064
+1025,21-02-2023,CUST195,West,Home Appliances,Mixer,3,1063,3189
+1026,20-06-2023,CUST640,West,Clothing,Shirt,5,1878,9390
+1027,27-03-2023,CUST895,South,Electronics,Headphones,3,3514,10542
+1028,14-05-2023,CUST895,West,Clothing,Shirt,1,3260,3260
+1029,16-03-2023,CUST739,South,Home Appliances,Microwave,4,2181,8724
+1030,09-07-2023,CUST324,North,Accessories,Wallet,1,3502,3502
+1031,03-01-2023,CUST458,South,Electronics,Tablet,1,2875,2875
+1032,14-06-2023,CUST324,East,Home Appliances,Refrigerator,1,4613,4613
+1033,09-06-2023,CUST707,West,Clothing,T-Shirt,3,3645,10935
+1034,05-07-2023,CUST663,West,Electronics,Headphones,1,2053,2053
+1035,23-04-2023,CUST180,East,Clothing,Jacket,2,1836,3672
+1036,09-05-2023,CUST502,South,Electronics,Smartphone,2,1054,2108
+1037,09-06-2023,CUST809,West,Clothing,Shirt,4,2977,11908
+1038,03-05-2023,CUST500,East,Accessories,Wallet,3,3455,10365
+1039,08-04-2023,CUST297,South,Clothing,T-Shirt,5,3131,15655
+1040,04-05-2023,CUST286,South,Accessories,Belt,1,3472,3472
+1041,06-07-2023,CUST502,South,Home Appliances,Mixer,3,859,2577
+1042,06-04-2023,CUST810,West,Accessories,Belt,3,3419,10257
+1043,09-05-2023,CUST878,West,Electronics,Laptop,2,3119,6238
+1044,11-02-2023,CUST710,East,Electronics,Laptop,2,4261,8522
+1045,01-03-2023,CUST980,South,Home Appliances,Microwave,2,823,1646
+1046,06-02-2023,CUST259,East,Electronics,Headphones,4,4748,18992
+1047,27-05-2023,CUST915,West,Accessories,Watch,1,3370,3370
+1048,26-04-2023,CUST686,North,Accessories,Wallet,1,4191,4191
+1049,22-04-2023,CUST609,North,Home Appliances,Microwave,4,453,1812
+1050,08-05-2023,CUST977,South,Accessories,Watch,5,3161,15805
+1051,08-07-2023,CUST780,West,Clothing,Jeans,3,3991,11973
+1052,21-01-2023,CUST915,West,Electronics,Headphones,1,4693,4693
+1053,08-05-2023,CUST132,West,Home Appliances,Microwave,3,4696,14088
+1054,29-04-2023,CUST121,South,Home Appliances,Refrigerator,3,4765,14295
+1055,01-07-2023,CUST875,East,Clothing,Jeans,5,762,3810
+1056,16-07-2023,CUST928,West,Accessories,Bag,5,1159,5795
+1057,17-01-2023,CUST271,West,Accessories,Wallet,3,3320,9960
+1058,09-04-2023,CUST991,North,Clothing,Shirt,5,2765,13825
+1059,30-06-2023,CUST706,East,Electronics,Headphones,5,501,2505
+1060,09-06-2023,CUST260,West,Home Appliances,Mixer,4,390,1560
+1061,23-02-2023,CUST669,East,Accessories,Wallet,2,2016,4032
+1062,27-03-2023,CUST762,South,Home Appliances,Toaster,2,4214,8428
+1063,17-01-2023,CUST203,North,Accessories,Belt,2,1609,3218
+1064,26-01-2023,CUST966,South,Electronics,Tablet,5,3006,15030
+1065,26-02-2023,CUST135,North,Electronics,Headphones,5,3150,15750
+1066,02-04-2023,CUST453,South,Home Appliances,Mixer,4,1366,5464
+1067,05-07-2023,CUST674,South,Home Appliances,Refrigerator,3,3936,11808
+1068,19-06-2023,CUST937,East,Electronics,Smartphone,2,1915,3830
+1069,08-01-2023,CUST152,West,Clothing,Jacket,4,2860,11440
+1070,26-04-2023,CUST449,East,Home Appliances,Microwave,5,1076,5380
+1071,24-04-2023,CUST735,South,Accessories,Belt,4,4564,18256
+1072,04-03-2023,CUST886,West,Clothing,Jacket,1,319,319
+1073,27-04-2023,CUST929,East,Clothing,Jacket,2,940,1880
+1074,09-05-2023,CUST157,South,Accessories,Watch,4,1212,4848
+1075,30-03-2023,CUST587,North,Electronics,Tablet,2,759,1518
+1076,11-07-2023,CUST546,North,Electronics,Laptop,5,4270,21350
+1077,03-06-2023,CUST755,East,Clothing,Shirt,3,3347,10041
+1078,10-03-2023,CUST146,North,Electronics,Smartphone,1,3556,3556
+1079,24-05-2023,CUST317,South,Clothing,Jeans,4,4748,18992
+1080,11-04-2023,CUST122,South,Home Appliances,Mixer,4,1957,7828
+1081,29-06-2023,CUST322,South,Clothing,Jeans,5,3049,15245
+1082,01-01-2023,CUST424,North,Clothing,Jacket,2,1831,3662
+1083,08-05-2023,CUST259,East,Home Appliances,Microwave,2,4792,9584
+1084,04-05-2023,CUST644,North,Home Appliances,Microwave,4,3946,15784
+1085,12-02-2023,CUST655,North,Electronics,Tablet,3,4113,12339
+1086,04-02-2023,CUST826,North,Electronics,Headphones,2,2746,5492
+1087,11-06-2023,CUST214,North,Clothing,T-Shirt,5,1825,9125
+1088,16-03-2023,CUST512,West,Accessories,Wallet,2,1716,3432
+1089,13-06-2023,CUST493,North,Home Appliances,Mixer,5,3008,15040
+1090,05-02-2023,CUST195,West,Electronics,Headphones,3,1322,3966
+1091,23-04-2023,CUST794,North,Accessories,Bag,5,4051,20255
+1092,03-03-2023,CUST695,West,Accessories,Watch,3,4152,12456
+1093,19-01-2023,CUST276,West,Electronics,Smartphone,5,898,4490
+1094,09-01-2023,CUST554,West,Home Appliances,Mixer,1,4371,4371
+1095,21-04-2023,CUST243,North,Clothing,Jacket,4,3777,15108
+1096,22-02-2023,CUST250,West,Electronics,Tablet,4,3138,12552
+1097,22-05-2023,CUST322,South,Electronics,Tablet,5,3182,15910
+1098,16-03-2023,CUST757,East,Electronics,Tablet,5,4530,22650
+1099,25-05-2023,CUST352,South,Home Appliances,Mixer,2,1153,2306
+1100,19-06-2023,CUST492,South,Accessories,Bag,5,1391,6955
+1101,29-01-2023,CUST264,South,Accessories,Bag,2,1740,3480
+1102,27-03-2023,CUST599,North,Accessories,Wallet,5,2056,10280
+1103,12-05-2023,CUST903,South,Accessories,Belt,1,1524,1524
+1104,01-07-2023,CUST266,East,Home Appliances,Refrigerator,3,3123,9369
+1105,06-05-2023,CUST550,North,Clothing,Jeans,3,4334,13002
+1106,27-02-2023,CUST759,West,Electronics,Smartphone,4,3909,15636
+1107,01-01-2023,CUST486,North,Home Appliances,Mixer,1,2158,2158
+1108,23-04-2023,CUST508,West,Home Appliances,Toaster,1,1414,1414
+1109,27-02-2023,CUST655,North,Electronics,Smartphone,5,333,1665
+1110,28-04-2023,CUST312,East,Home Appliances,Mixer,5,4375,21875
+1111,27-05-2023,CUST631,North,Home Appliances,Mixer,4,1450,5800
+1112,14-01-2023,CUST242,East,Clothing,Jacket,1,3576,3576
+1113,04-07-2023,CUST111,South,Electronics,Laptop,3,2903,8709
+1114,27-04-2023,CUST107,South,Home Appliances,Microwave,4,867,3468
+1115,05-07-2023,CUST415,South,Home Appliances,Microwave,2,3919,7838
+1116,11-07-2023,CUST601,East,Home Appliances,Microwave,5,4336,21680
+1117,06-06-2023,CUST657,East,Electronics,Laptop,1,2708,2708
+1118,16-07-2023,CUST914,North,Electronics,Smartphone,2,455,910
+1119,02-02-2023,CUST473,North,Clothing,Jeans,2,1215,2430
+1120,27-03-2023,CUST926,East,Clothing,T-Shirt,1,4358,4358
+1121,15-04-2023,CUST198,East,Electronics,Laptop,1,1833,1833
+1122,16-07-2023,CUST962,North,Electronics,Laptop,4,2200,8800
+1123,14-06-2023,CUST813,South,Clothing,Jacket,5,3836,19180
+1124,20-02-2023,CUST784,North,Accessories,Watch,5,2248,11240
+1125,01-02-2023,CUST133,West,Home Appliances,Toaster,1,4783,4783
+1126,11-06-2023,CUST537,South,Accessories,Wallet,2,449,898
+1127,12-07-2023,CUST153,West,Accessories,Belt,2,4563,9126
+1128,25-05-2023,CUST723,East,Electronics,Smartphone,3,2048,6144
+1129,07-03-2023,CUST174,East,Accessories,Belt,5,4181,20905
+1130,08-04-2023,CUST949,South,Accessories,Bag,4,1529,6116
+1131,21-02-2023,CUST348,South,Accessories,Belt,3,4742,14226
+1132,16-04-2023,CUST662,North,Electronics,Headphones,4,4837,19348
+1133,03-07-2023,CUST500,South,Electronics,Laptop,4,337,1348
+1134,10-03-2023,CUST645,South,Electronics,Headphones,4,3231,12924
+1135,12-02-2023,CUST851,East,Electronics,Smartphone,5,4018,20090
+1136,24-05-2023,CUST619,West,Accessories,Belt,1,3645,3645
+1137,06-04-2023,CUST294,East,Home Appliances,Microwave,1,3466,3466
+1138,02-05-2023,CUST150,East,Electronics,Headphones,2,4356,8712
+1139,19-06-2023,CUST928,South,Electronics,Laptop,2,4899,9798
+1140,31-03-2023,CUST145,South,Electronics,Smartphone,1,723,723
+1141,16-02-2023,CUST220,South,Electronics,Smartphone,2,2496,4992
+1142,17-02-2023,CUST672,North,Accessories,Wallet,3,3078,9234
+1143,23-04-2023,CUST966,North,Clothing,T-Shirt,1,2255,2255
+1144,19-03-2023,CUST315,South,Home Appliances,Refrigerator,2,4323,8646
+1145,31-05-2023,CUST849,East,Electronics,Smartphone,3,1846,5538
+1146,07-02-2023,CUST838,East,Accessories,Wallet,5,3545,17725
+1147,28-01-2023,CUST813,East,Accessories,Wallet,1,4780,4780
+1148,13-02-2023,CUST636,North,Electronics,Laptop,2,325,650
+1149,18-05-2023,CUST166,North,Electronics,Headphones,1,1803,1803
+1150,03-02-2023,CUST722,West,Electronics,Smartphone,4,4406,17624
+1151,11-04-2023,CUST617,West,Home Appliances,Mixer,4,2672,10688
+1152,03-07-2023,CUST414,North,Clothing,T-Shirt,2,3714,7428
+1153,30-06-2023,CUST761,North,Clothing,Shirt,1,1512,1512
+1154,16-03-2023,CUST545,South,Clothing,Jeans,4,3621,14484
+1155,31-01-2023,CUST139,North,Clothing,Jacket,1,442,442
+1156,16-03-2023,CUST103,East,Home Appliances,Microwave,2,667,1334
+1157,28-06-2023,CUST673,North,Clothing,Jeans,1,2751,2751
+1158,09-03-2023,CUST886,West,Clothing,Jacket,3,1341,4023
+1159,01-01-2023,CUST189,South,Electronics,Headphones,1,4854,4854
+1160,19-05-2023,CUST610,West,Home Appliances,Toaster,5,2117,10585
+1161,14-05-2023,CUST789,West,Electronics,Tablet,3,3944,11832
+1162,10-05-2023,CUST112,West,Clothing,Shirt,2,2419,4838
+1163,11-04-2023,CUST428,North,Clothing,T-Shirt,1,1542,1542
+1164,05-04-2023,CUST916,North,Electronics,Tablet,3,3877,11631
+1165,19-03-2023,CUST984,West,Clothing,T-Shirt,4,2169,8676
+1166,04-02-2023,CUST612,West,Accessories,Watch,2,2835,5670
+1167,15-04-2023,CUST328,South,Home Appliances,Toaster,4,4050,16200
+1168,03-05-2023,CUST177,South,Home Appliances,Toaster,3,3098,9294
+1169,30-03-2023,CUST501,West,Clothing,T-Shirt,1,1265,1265
+1170,23-05-2023,CUST764,North,Home Appliances,Refrigerator,3,4870,14610
+1171,22-02-2023,CUST715,West,Electronics,Tablet,2,2197,4394
+1172,14-05-2023,CUST678,East,Accessories,Belt,3,397,1191
+1173,04-06-2023,CUST519,North,Accessories,Wallet,2,2235,4470
+1174,04-06-2023,CUST388,South,Clothing,Shirt,1,3268,3268
+1175,03-05-2023,CUST941,North,Home Appliances,Toaster,2,4812,9624
+1176,16-05-2023,CUST360,North,Clothing,Jeans,5,3428,17140
+1177,10-05-2023,CUST510,East,Accessories,Wallet,4,3956,15824
+1178,12-02-2023,CUST382,North,Accessories,Belt,4,993,3972
+1179,07-02-2023,CUST233,West,Home Appliances,Refrigerator,2,3119,6238
+1180,17-04-2023,CUST495,South,Accessories,Belt,2,2549,5098
+1181,21-04-2023,CUST715,West,Electronics,Headphones,2,1184,2368
+1182,09-03-2023,CUST232,West,Accessories,Wallet,4,4651,18604
+1183,02-04-2023,CUST898,South,Electronics,Headphones,2,3256,6512
+1184,09-02-2023,CUST396,South,Electronics,Smartphone,3,3733,11199
+1185,11-04-2023,CUST504,South,Accessories,Belt,1,3061,3061
+1186,04-03-2023,CUST666,East,Clothing,T-Shirt,1,3272,3272
+1187,22-02-2023,CUST236,South,Home Appliances,Refrigerator,5,3702,18510
+1188,25-01-2023,CUST701,East,Home Appliances,Mixer,5,774,3870
+1189,11-06-2023,CUST446,North,Clothing,Jeans,2,674,1348
+1190,01-06-2023,CUST124,East,Home Appliances,Refrigerator,3,1405,4215
+1191,04-03-2023,CUST761,South,Home Appliances,Toaster,5,4580,22900
+1192,18-07-2023,CUST948,West,Home Appliances,Toaster,5,3320,16600
+1193,27-03-2023,CUST575,East,Electronics,Laptop,4,3901,15604
+1194,01-01-2023,CUST835,North,Electronics,Headphones,1,4622,4622
+1195,03-03-2023,CUST131,South,Clothing,Jacket,3,1151,3453
+1196,30-01-2023,CUST243,West,Electronics,Laptop,5,1700,8500
+1197,13-07-2023,CUST601,West,Accessories,Bag,1,3257,3257
+1198,06-06-2023,CUST154,East,Electronics,Smartphone,3,3535,10605
+1199,20-04-2023,CUST261,West,Accessories,Wallet,2,1681,3362
+1200,27-06-2023,CUST490,North,Electronics,Tablet,4,2023,8092
+1201,08-03-2023,CUST542,East,Home Appliances,Mixer,1,3006,3006
+1202,08-03-2023,CUST150,North,Electronics,Headphones,1,3510,3510
+1203,29-03-2023,CUST177,West,Home Appliances,Refrigerator,2,2343,4686
+1204,15-07-2023,CUST599,North,Home Appliances,Toaster,3,4183,12549
+1205,07-01-2023,CUST772,East,Clothing,Shirt,2,4625,9250
+1206,05-02-2023,CUST384,West,Electronics,Tablet,5,1114,5570
+1207,10-05-2023,CUST806,East,Clothing,Jeans,1,3794,3794
+1208,15-06-2023,CUST355,South,Accessories,Wallet,4,1004,4016
+1209,27-03-2023,CUST463,West,Electronics,Smartphone,5,3777,18885
+1210,24-04-2023,CUST214,North,Electronics,Smartphone,3,4423,13269
+1211,25-01-2023,CUST458,North,Clothing,Shirt,2,436,872
+1212,04-01-2023,CUST765,South,Clothing,Jeans,3,2741,8223
+1213,06-02-2023,CUST174,South,Electronics,Laptop,2,3998,7996
+1214,10-04-2023,CUST140,South,Clothing,T-Shirt,5,2289,11445
+1215,28-03-2023,CUST728,South,Clothing,Shirt,5,4883,24415
+1216,17-06-2023,CUST709,West,Clothing,Shirt,3,845,2535
+1217,18-05-2023,CUST784,North,Electronics,Laptop,5,654,3270
+1218,02-05-2023,CUST657,West,Clothing,Shirt,4,4997,19988
+1219,20-02-2023,CUST792,West,Clothing,T-Shirt,3,3976,11928
+1220,11-01-2023,CUST395,East,Accessories,Bag,5,348,1740
+1221,08-02-2023,CUST843,East,Home Appliances,Microwave,1,386,386
+1222,05-02-2023,CUST850,West,Clothing,Jeans,5,1985,9925
+1223,09-07-2023,CUST606,North,Accessories,Belt,4,4120,16480
+1224,13-07-2023,CUST600,North,Accessories,Bag,1,353,353
+1225,02-03-2023,CUST715,South,Electronics,Headphones,1,1440,1440
+1226,18-04-2023,CUST271,East,Electronics,Tablet,3,4426,13278
+1227,11-04-2023,CUST143,East,Clothing,Jeans,2,2522,5044
+1228,26-02-2023,CUST922,North,Accessories,Watch,5,529,2645
+1229,29-05-2023,CUST180,East,Accessories,Wallet,3,4262,12786
+1230,28-02-2023,CUST588,North,Electronics,Smartphone,1,3926,3926
+1231,31-05-2023,CUST893,North,Clothing,Jacket,2,600,1200
+1232,25-04-2023,CUST787,West,Clothing,Jeans,5,4432,22160
+1233,26-04-2023,CUST501,East,Clothing,Jacket,5,3494,17470
+1234,01-06-2023,CUST719,West,Clothing,Jacket,1,1382,1382
+1235,02-07-2023,CUST463,East,Electronics,Smartphone,3,3183,9549
+1236,03-04-2023,CUST496,South,Accessories,Wallet,1,3787,3787
+1237,06-05-2023,CUST549,East,Electronics,Headphones,5,1331,6655
+1238,13-01-2023,CUST240,South,Accessories,Bag,2,2661,5322
+1239,29-01-2023,CUST576,South,Home Appliances,Microwave,3,1013,3039
+1240,03-07-2023,CUST847,East,Electronics,Headphones,1,471,471
+1241,25-03-2023,CUST488,North,Electronics,Smartphone,1,3630,3630
+1242,22-05-2023,CUST475,South,Clothing,Shirt,3,3700,11100
+1243,02-06-2023,CUST531,North,Clothing,T-Shirt,2,4588,9176
+1244,18-02-2023,CUST988,West,Electronics,Smartphone,1,4694,4694
+1245,06-02-2023,CUST160,North,Home Appliances,Microwave,3,2241,6723
+1246,02-06-2023,CUST810,West,Accessories,Wallet,3,2068,6204
+1247,20-04-2023,CUST429,East,Home Appliances,Refrigerator,4,1084,4336
+1248,03-01-2023,CUST987,South,Clothing,Shirt,2,1136,2272
+1249,20-01-2023,CUST989,North,Electronics,Laptop,1,3370,3370
+1250,27-06-2023,CUST949,South,Electronics,Tablet,2,2666,5332
+1251,13-01-2023,CUST219,North,Electronics,Headphones,3,4455,13365
+1252,22-05-2023,CUST456,South,Accessories,Watch,1,4875,4875
+1253,29-01-2023,CUST748,East,Accessories,Watch,3,2882,8646
+1254,09-01-2023,CUST562,West,Electronics,Smartphone,4,4465,17860
+1255,04-05-2023,CUST137,West,Electronics,Laptop,3,1154,3462
+1256,17-07-2023,CUST136,West,Accessories,Watch,2,1113,2226
+1257,22-03-2023,CUST213,West,Home Appliances,Mixer,4,4236,16944
+1258,05-07-2023,CUST422,West,Electronics,Headphones,5,2362,11810
+1259,02-02-2023,CUST361,West,Home Appliances,Toaster,3,2196,6588
+1260,13-01-2023,CUST462,North,Accessories,Wallet,4,1904,7616
+1261,10-07-2023,CUST766,South,Electronics,Laptop,2,4651,9302
+1262,27-02-2023,CUST860,East,Home Appliances,Refrigerator,5,756,3780
+1263,17-04-2023,CUST536,South,Accessories,Belt,2,2919,5838
+1264,02-01-2023,CUST817,North,Accessories,Belt,2,2603,5206
+1265,04-06-2023,CUST212,North,Electronics,Headphones,2,3317,6634
+1266,11-07-2023,CUST955,North,Electronics,Headphones,2,4995,9990
+1267,15-03-2023,CUST332,West,Accessories,Wallet,3,3726,11178
+1268,20-03-2023,CUST321,North,Clothing,Jacket,4,771,3084
+1269,09-03-2023,CUST830,West,Electronics,Smartphone,4,2087,8348
+1270,12-07-2023,CUST121,South,Electronics,Headphones,1,1085,1085
+1271,14-01-2023,CUST803,East,Home Appliances,Refrigerator,2,2553,5106
+1272,29-06-2023,CUST480,West,Electronics,Headphones,4,962,3848
+1273,14-05-2023,CUST978,East,Accessories,Watch,3,3304,9912
+1274,26-01-2023,CUST581,South,Home Appliances,Refrigerator,3,4865,14595
+1275,15-01-2023,CUST986,North,Clothing,Shirt,4,238,952
+1276,10-05-2023,CUST786,South,Electronics,Tablet,4,2023,8092
+1277,22-03-2023,CUST481,West,Home Appliances,Toaster,3,3978,11934
+1278,16-02-2023,CUST968,East,Home Appliances,Microwave,5,4316,21580
+1279,04-05-2023,CUST626,South,Home Appliances,Toaster,3,4865,14595
+1280,24-01-2023,CUST623,South,Electronics,Tablet,1,992,992
+1281,01-03-2023,CUST529,North,Accessories,Wallet,3,1807,5421
+1282,20-03-2023,CUST126,South,Electronics,Laptop,5,719,3595
+1283,11-07-2023,CUST792,West,Clothing,T-Shirt,3,4644,13932
+1284,02-06-2023,CUST833,South,Home Appliances,Toaster,3,726,2178
+1285,09-01-2023,CUST777,West,Accessories,Watch,4,2075,8300
+1286,10-05-2023,CUST443,West,Electronics,Headphones,5,316,1580
+1287,13-03-2023,CUST888,South,Accessories,Wallet,5,2968,14840
+1288,05-04-2023,CUST265,West,Clothing,T-Shirt,2,1589,3178
+1289,12-04-2023,CUST524,West,Accessories,Watch,1,2243,2243
+1290,25-05-2023,CUST687,North,Accessories,Bag,3,1776,5328
+1291,17-06-2023,CUST341,West,Clothing,T-Shirt,4,2920,11680
+1292,07-06-2023,CUST688,West,Electronics,Smartphone,1,3048,3048
+1293,23-06-2023,CUST221,South,Clothing,Jeans,2,289,578
+1294,21-06-2023,CUST404,West,Accessories,Bag,2,1086,2172
+1295,14-05-2023,CUST108,South,Accessories,Watch,3,834,2502
+1296,08-01-2023,CUST939,South,Electronics,Tablet,1,915,915
+1297,07-05-2023,CUST106,East,Home Appliances,Toaster,4,4406,17624
+1298,27-02-2023,CUST121,South,Home Appliances,Microwave,4,3661,14644
+1299,12-01-2023,CUST186,West,Accessories,Belt,1,4309,4309
+1300,02-05-2023,CUST246,East,Electronics,Laptop,5,1466,7330
+1301,29-04-2023,CUST408,East,Clothing,T-Shirt,5,2127,10635
+1302,17-07-2023,CUST822,South,Home Appliances,Refrigerator,4,3865,15460
+1303,11-05-2023,CUST813,East,Electronics,Headphones,1,1282,1282
+1304,15-05-2023,CUST431,North,Accessories,Watch,5,552,2760
+1305,24-01-2023,CUST503,North,Clothing,Shirt,2,1156,2312
+1306,20-01-2023,CUST251,South,Home Appliances,Microwave,4,3653,14612
+1307,27-04-2023,CUST965,West,Electronics,Tablet,1,1473,1473
+1308,06-01-2023,CUST394,South,Home Appliances,Toaster,2,3179,6358
+1309,05-05-2023,CUST367,East,Accessories,Belt,2,1469,2938
+1310,09-04-2023,CUST893,West,Electronics,Smartphone,5,3158,15790
+1311,14-01-2023,CUST433,South,Home Appliances,Microwave,2,1139,2278
+1312,10-02-2023,CUST417,South,Accessories,Watch,5,4205,21025
+1313,10-05-2023,CUST842,South,Home Appliances,Mixer,1,3355,3355
+1314,28-01-2023,CUST165,East,Electronics,Tablet,1,2240,2240
+1315,03-07-2023,CUST775,North,Electronics,Laptop,1,4755,4755
+1316,14-07-2023,CUST729,South,Accessories,Belt,3,3281,9843
+1317,04-04-2023,CUST460,North,Home Appliances,Toaster,5,3091,15455
+1318,05-03-2023,CUST985,West,Electronics,Headphones,3,2560,7680
+1319,14-06-2023,CUST404,North,Home Appliances,Mixer,3,2934,8802
+1320,14-05-2023,CUST719,East,Home Appliances,Microwave,4,1590,6360
+1321,10-05-2023,CUST610,North,Electronics,Headphones,2,2581,5162
+1322,17-07-2023,CUST584,North,Home Appliances,Toaster,5,1258,6290
+1323,28-06-2023,CUST305,West,Accessories,Watch,1,1208,1208
+1324,12-02-2023,CUST225,South,Clothing,T-Shirt,5,2489,12445
+1325,08-02-2023,CUST322,West,Electronics,Smartphone,5,1408,7040
+1326,21-06-2023,CUST393,West,Accessories,Belt,2,1118,2236
+1327,21-03-2023,CUST845,West,Accessories,Wallet,5,4603,23015
+1328,09-05-2023,CUST875,North,Accessories,Wallet,2,1564,3128
+1329,27-03-2023,CUST274,South,Home Appliances,Toaster,5,1718,8590
+1330,07-06-2023,CUST213,South,Electronics,Tablet,2,2674,5348
+1331,13-03-2023,CUST444,South,Electronics,Smartphone,1,4883,4883
+1332,17-02-2023,CUST168,North,Home Appliances,Mixer,1,3324,3324
+1333,11-07-2023,CUST674,North,Clothing,Jeans,4,4233,16932
+1334,13-01-2023,CUST684,North,Electronics,Laptop,1,4983,4983
+1335,08-04-2023,CUST480,South,Electronics,Tablet,1,1547,1547
+1336,23-03-2023,CUST496,North,Clothing,T-Shirt,3,3753,11259
+1337,29-03-2023,CUST921,East,Accessories,Belt,5,3912,19560
+1338,18-07-2023,CUST242,North,Electronics,Laptop,1,3347,3347
+1339,18-02-2023,CUST835,North,Accessories,Wallet,5,1640,8200
+1340,09-04-2023,CUST721,South,Accessories,Wallet,2,3538,7076
+1341,26-03-2023,CUST893,West,Clothing,Jeans,1,1226,1226
+1342,02-06-2023,CUST111,North,Home Appliances,Toaster,4,1377,5508
+1343,13-02-2023,CUST839,East,Clothing,T-Shirt,5,3222,16110
+1344,03-05-2023,CUST526,North,Accessories,Wallet,2,2611,5222
+1345,21-03-2023,CUST914,North,Electronics,Tablet,3,1214,3642
+1346,20-02-2023,CUST882,West,Home Appliances,Refrigerator,1,914,914
+1347,27-04-2023,CUST663,South,Electronics,Laptop,3,1163,3489
+1348,13-06-2023,CUST769,South,Accessories,Watch,4,305,1220
+1349,30-03-2023,CUST449,East,Clothing,Shirt,5,2337,11685
+1350,10-07-2023,CUST411,North,Accessories,Belt,4,3854,15416
+1351,25-03-2023,CUST551,South,Clothing,Shirt,2,235,470
+1352,16-04-2023,CUST658,East,Accessories,Bag,1,1908,1908
+1353,17-05-2023,CUST125,North,Electronics,Tablet,5,1443,7215
+1354,19-06-2023,CUST683,West,Accessories,Bag,2,1860,3720
+1355,09-03-2023,CUST149,West,Home Appliances,Mixer,2,1516,3032
+1356,30-03-2023,CUST245,East,Accessories,Wallet,4,3473,13892
+1357,10-03-2023,CUST786,North,Home Appliances,Toaster,1,1662,1662
+1358,29-04-2023,CUST760,North,Accessories,Wallet,2,4968,9936
+1359,18-07-2023,CUST259,East,Clothing,T-Shirt,5,2666,13330
+1360,02-06-2023,CUST869,West,Clothing,Shirt,5,640,3200
+1361,08-03-2023,CUST653,South,Accessories,Belt,5,3929,19645
+1362,07-07-2023,CUST401,East,Electronics,Tablet,1,3551,3551
+1363,19-04-2023,CUST135,West,Home Appliances,Toaster,2,1390,2780
+1364,16-05-2023,CUST452,East,Electronics,Laptop,4,272,1088
+1365,18-02-2023,CUST927,South,Clothing,Shirt,4,2004,8016
+1366,09-06-2023,CUST248,West,Home Appliances,Mixer,4,3810,15240
+1367,13-02-2023,CUST480,South,Clothing,T-Shirt,2,266,532
+1368,21-06-2023,CUST869,South,Accessories,Bag,2,2974,5948
+1369,30-01-2023,CUST215,West,Electronics,Tablet,2,1694,3388
+1370,16-07-2023,CUST944,North,Clothing,T-Shirt,2,3819,7638
+1371,16-04-2023,CUST545,South,Accessories,Belt,1,4606,4606
+1372,24-05-2023,CUST747,West,Electronics,Tablet,4,4952,19808
+1373,25-04-2023,CUST203,South,Accessories,Wallet,5,4643,23215
+1374,01-05-2023,CUST385,North,Electronics,Headphones,4,2568,10272
+1375,01-02-2023,CUST260,North,Home Appliances,Toaster,2,4751,9502
+1376,22-05-2023,CUST903,North,Home Appliances,Microwave,4,2985,11940
+1377,15-04-2023,CUST440,South,Accessories,Bag,5,1801,9005
+1378,16-03-2023,CUST934,West,Accessories,Watch,1,2696,2696
+1379,24-02-2023,CUST361,East,Clothing,Jacket,2,3467,6934
+1380,12-01-2023,CUST338,North,Clothing,Jacket,4,443,1772
+1381,07-06-2023,CUST315,South,Clothing,Jeans,2,2026,4052
+1382,07-01-2023,CUST625,North,Clothing,Jeans,3,4119,12357
+1383,12-06-2023,CUST565,South,Accessories,Watch,3,4425,13275
+1384,25-01-2023,CUST352,South,Home Appliances,Toaster,2,2185,4370
+1385,21-03-2023,CUST921,South,Electronics,Headphones,1,1333,1333
+1386,18-06-2023,CUST124,North,Electronics,Headphones,3,2730,8190
+1387,25-01-2023,CUST178,West,Electronics,Smartphone,5,1163,5815
+1388,06-04-2023,CUST191,North,Electronics,Headphones,4,4423,17692
+1389,01-03-2023,CUST546,South,Accessories,Bag,4,3236,12944
+1390,10-05-2023,CUST159,East,Home Appliances,Mixer,3,4549,13647
+1391,10-01-2023,CUST444,South,Accessories,Belt,3,2153,6459
+1392,25-02-2023,CUST562,North,Clothing,Jacket,2,2150,4300
+1393,14-03-2023,CUST255,South,Accessories,Belt,1,4444,4444
+1394,04-01-2023,CUST871,East,Clothing,Jacket,4,808,3232
+1395,04-05-2023,CUST919,North,Home Appliances,Mixer,5,1582,7910
+1396,27-06-2023,CUST162,North,Home Appliances,Microwave,4,4717,18868
+1397,14-01-2023,CUST554,North,Home Appliances,Refrigerator,5,2339,11695
+1398,02-07-2023,CUST485,South,Electronics,Smartphone,5,4805,24025
+1399,06-03-2023,CUST112,North,Accessories,Watch,5,1100,5500
+1400,22-06-2023,CUST771,West,Clothing,Jeans,5,2585,12925
+1401,19-05-2023,CUST802,North,Electronics,Tablet,1,4995,4995
+1402,15-07-2023,CUST645,West,Home Appliances,Microwave,5,2757,13785
+1403,29-06-2023,CUST521,South,Home Appliances,Microwave,2,4004,8008
+1404,15-04-2023,CUST291,North,Electronics,Smartphone,5,2872,14360
+1405,17-02-2023,CUST128,North,Home Appliances,Mixer,1,771,771
+1406,07-07-2023,CUST331,North,Clothing,Jeans,2,4295,8590
+1407,06-07-2023,CUST825,West,Home Appliances,Refrigerator,2,975,1950
+1408,29-03-2023,CUST272,East,Electronics,Tablet,1,4126,4126
+1409,08-01-2023,CUST944,West,Electronics,Headphones,4,2348,9392
+1410,19-04-2023,CUST534,West,Electronics,Tablet,3,3656,10968
+1411,28-05-2023,CUST376,West,Accessories,Wallet,1,1868,1868
+1412,29-06-2023,CUST498,East,Clothing,Jacket,4,1874,7496
+1413,05-07-2023,CUST360,North,Accessories,Belt,4,762,3048
+1414,21-04-2023,CUST467,West,Clothing,Jeans,2,1773,3546
+1415,13-07-2023,CUST562,South,Electronics,Tablet,1,2576,2576
+1416,15-04-2023,CUST268,North,Accessories,Watch,4,1813,7252
+1417,13-06-2023,CUST751,East,Clothing,Jacket,2,2396,4792
+1418,09-06-2023,CUST450,West,Home Appliances,Toaster,5,1916,9580
+1419,10-01-2023,CUST882,North,Home Appliances,Microwave,4,722,2888
+1420,28-02-2023,CUST945,West,Home Appliances,Toaster,1,4783,4783
+1421,07-06-2023,CUST824,West,Clothing,Shirt,2,3037,6074
+1422,02-05-2023,CUST643,South,Home Appliances,Refrigerator,1,4188,4188
+1423,24-06-2023,CUST629,North,Accessories,Belt,1,1456,1456
+1424,14-04-2023,CUST337,East,Electronics,Smartphone,5,501,2505
+1425,27-03-2023,CUST761,East,Accessories,Wallet,3,4551,13653
+1426,13-01-2023,CUST565,South,Electronics,Smartphone,4,4068,16272
+1427,19-02-2023,CUST706,East,Electronics,Laptop,4,482,1928
+1428,22-01-2023,CUST782,North,Accessories,Belt,4,660,2640
+1429,28-04-2023,CUST118,East,Electronics,Laptop,3,902,2706
+1430,08-05-2023,CUST328,East,Electronics,Smartphone,4,1504,6016
+1431,13-03-2023,CUST228,West,Home Appliances,Toaster,2,3927,7854
+1432,16-04-2023,CUST965,East,Electronics,Tablet,1,2055,2055
+1433,15-02-2023,CUST330,East,Electronics,Smartphone,5,4167,20835
+1434,13-01-2023,CUST492,West,Accessories,Bag,1,2359,2359
+1435,27-02-2023,CUST665,West,Home Appliances,Toaster,2,2849,5698
+1436,30-06-2023,CUST476,West,Electronics,Smartphone,1,3689,3689
+1437,11-04-2023,CUST797,West,Accessories,Wallet,3,4095,12285
+1438,18-05-2023,CUST635,South,Accessories,Watch,4,1243,4972
+1439,13-04-2023,CUST504,South,Accessories,Bag,5,2223,11115
+1440,26-02-2023,CUST119,North,Clothing,Jeans,4,4483,17932
+1441,14-01-2023,CUST614,West,Accessories,Belt,4,3492,13968
+1442,30-04-2023,CUST865,West,Electronics,Headphones,2,3147,6294
+1443,01-03-2023,CUST916,East,Clothing,Jeans,2,3459,6918
+1444,27-02-2023,CUST216,East,Clothing,Jacket,5,741,3705
+1445,22-06-2023,CUST839,South,Home Appliances,Microwave,3,631,1893
+1446,04-03-2023,CUST727,North,Accessories,Watch,1,1369,1369
+1447,26-02-2023,CUST217,North,Accessories,Wallet,3,1526,4578
+1448,16-02-2023,CUST498,South,Electronics,Laptop,4,859,3436
+1449,13-04-2023,CUST236,South,Accessories,Bag,4,274,1096
+1450,02-03-2023,CUST237,South,Home Appliances,Mixer,1,699,699
+1451,04-04-2023,CUST353,South,Accessories,Watch,3,3896,11688
+1452,20-02-2023,CUST856,East,Electronics,Smartphone,1,2100,2100
+1453,03-04-2023,CUST931,North,Clothing,Jacket,2,4876,9752
+1454,05-01-2023,CUST455,South,Home Appliances,Mixer,5,903,4515
+1455,09-05-2023,CUST891,North,Clothing,T-Shirt,2,3178,6356
+1456,01-03-2023,CUST463,West,Home Appliances,Toaster,1,885,885
+1457,07-06-2023,CUST507,West,Electronics,Tablet,4,4843,19372
+1458,02-07-2023,CUST319,South,Clothing,Jeans,4,362,1448
+1459,11-03-2023,CUST655,North,Home Appliances,Toaster,2,404,808
+1460,23-03-2023,CUST349,East,Electronics,Headphones,3,2843,8529
+1461,10-06-2023,CUST618,South,Electronics,Laptop,4,889,3556
+1462,28-05-2023,CUST571,East,Accessories,Belt,2,871,1742
+1463,03-06-2023,CUST591,West,Home Appliances,Refrigerator,5,1649,8245
+1464,27-02-2023,CUST120,South,Home Appliances,Toaster,1,4460,4460
+1465,27-05-2023,CUST470,North,Electronics,Tablet,2,2552,5104
+1466,10-06-2023,CUST277,North,Electronics,Headphones,4,624,2496
+1467,02-02-2023,CUST692,West,Home Appliances,Refrigerator,2,797,1594
+1468,18-06-2023,CUST522,South,Electronics,Laptop,2,2290,4580
+1469,17-07-2023,CUST709,North,Electronics,Laptop,2,1717,3434
+1470,22-01-2023,CUST211,North,Clothing,Shirt,5,1737,8685
+1471,22-04-2023,CUST534,North,Clothing,Jeans,2,3415,6830
+1472,17-06-2023,CUST393,West,Accessories,Bag,4,543,2172
+1473,04-03-2023,CUST660,West,Accessories,Bag,3,1927,5781
+1474,03-06-2023,CUST482,West,Home Appliances,Refrigerator,5,4827,24135
+1475,26-04-2023,CUST703,South,Clothing,T-Shirt,5,1949,9745
+1476,28-01-2023,CUST125,North,Accessories,Watch,1,2305,2305
+1477,19-07-2023,CUST143,North,Accessories,Bag,1,4170,4170
+1478,30-03-2023,CUST478,South,Clothing,T-Shirt,3,2014,6042
+1479,11-01-2023,CUST603,West,Accessories,Belt,5,4602,23010
+1480,10-02-2023,CUST263,North,Clothing,T-Shirt,4,675,2700
+1481,23-05-2023,CUST337,West,Electronics,Headphones,1,4854,4854
+1482,17-07-2023,CUST367,South,Clothing,Jeans,4,4763,19052
+1483,03-01-2023,CUST382,South,Accessories,Wallet,3,3124,9372
+1484,09-05-2023,CUST619,North,Accessories,Wallet,1,2467,2467
+1485,04-01-2023,CUST465,South,Home Appliances,Microwave,3,812,2436
+1486,16-01-2023,CUST228,East,Accessories,Wallet,1,4158,4158
+1487,07-06-2023,CUST368,South,Electronics,Tablet,5,3804,19020
+1488,08-05-2023,CUST894,North,Home Appliances,Microwave,2,1794,3588
+1489,25-01-2023,CUST765,South,Electronics,Tablet,1,2443,2443
+1490,09-01-2023,CUST471,South,Clothing,Shirt,3,3747,11241
+1491,18-04-2023,CUST975,North,Clothing,Jeans,3,3190,9570
+1492,17-03-2023,CUST575,South,Electronics,Headphones,2,1354,2708
+1493,09-07-2023,CUST516,North,Clothing,T-Shirt,5,4031,20155
+1494,20-02-2023,CUST437,South,Accessories,Wallet,2,4336,8672
+1495,04-04-2023,CUST882,East,Accessories,Watch,1,1874,1874
+1496,16-01-2023,CUST165,East,Accessories,Watch,4,3140,12560
+1497,16-06-2023,CUST553,North,Home Appliances,Microwave,4,1270,5080
+1498,28-03-2023,CUST739,East,Home Appliances,Microwave,1,4030,4030
+1499,26-02-2023,CUST728,North,Accessories,Wallet,2,4828,9656
+1500,25-05-2023,CUST650,North,Clothing,T-Shirt,4,659,2636
