@@ -52,7 +52,6 @@ except Exception as e:
 
 # ------------------ Load Data ------------------
 
-# ------------------ Load Data ------------------
 table_name = st.sidebar.selectbox("Select Table to Load", tables)
 try:
     query = f"SELECT * FROM {table_name};"
@@ -80,14 +79,13 @@ if 'Total_Amount' in df.columns and 'Customer_ID' in df.columns:
     repeat_customers = df['Customer_ID'].value_counts()
     repeat_customers = repeat_customers[repeat_customers > 1].count()
 
+    col1, col2, col3, col4 = st.columns(4)
+    col1.metric("Total Sales", f"${total_sales:,.2f}")
+    col2.metric("Average Order Value", f"${avg_order_value:,.2f}")
+    col3.metric("Total Customers", total_customers)
+    col4.metric("Repeat Customers", repeat_customers)
 
-```
-col1, col2, col3, col4 = st.columns(4)
-col1.metric("Total Sales", f"${total_sales:,.2f}")
-col2.metric("Average Order Value", f"${avg_order_value:,.2f}")
-col3.metric("Total Customers", total_customers)
-col4.metric("Repeat Customers", repeat_customers)
-```
+
 
 # ------------------ Monthly Sales ------------------
 
@@ -122,6 +120,7 @@ if 'Product_Name' in df.columns and 'Total_Amount' in df.columns:
     ABC = pd.cut(cum_percent, bins=[0, 80, 95, 100], labels=['A','B','C'])
     abc_df = pd.DataFrame({"Sales": df_product, "Class": ABC})
     st.dataframe(abc_df.head(15))
+
 
 
 
