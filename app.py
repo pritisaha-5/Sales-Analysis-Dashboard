@@ -52,13 +52,14 @@ except Exception as e:
 
 # ------------------ Load Data ------------------
 
+# ------------------ Load Data ------------------
 table_name = st.sidebar.selectbox("Select Table to Load", tables)
 try:
-query = f"SELECT * FROM {table_name};"
-df = pd.read_sql(query, conn)
+    query = f"SELECT * FROM {table_name};"
+    df = pd.read_sql(query, conn)
 except Exception as e:
-st.error(f"Failed to load data from table '{table_name}'.\nError: {e}")
-st.stop()
+    st.error(f"Failed to load data from table '{table_name}'.\nError: {e}")
+    st.stop()
 
 # ------------------ Clean Data ------------------
 
@@ -118,5 +119,6 @@ cum_percent = df_product.cumsum() / df_product.sum() * 100
 ABC = pd.cut(cum_percent, bins=[0, 80, 95, 100], labels=['A','B','C'])
 abc_df = pd.DataFrame({"Sales": df_product, "Class": ABC})
 st.dataframe(abc_df.head(15))
+
 
 
