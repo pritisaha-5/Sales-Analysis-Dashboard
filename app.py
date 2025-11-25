@@ -28,9 +28,10 @@ f"DATABASE={database};"
 
 # ------------------ Test SQL Server Connection ------------------
 
+# Correct
 try:
-conn = pyodbc.connect(conn_str, timeout=5)
-st.success(f"✅ Connected to SQL Server at {server} successfully!")
+    conn = pyodbc.connect(conn_str, timeout=5)
+    st.success("Connected!")
 
 ```
 # Optional: List tables for debugging
@@ -120,3 +121,4 @@ cum_percent = df_product.cumsum() / df_product.sum() * 100
 ABC = pd.cut(cum_percent, bins=[0, 80, 95, 100], labels=['A','B','C'])
 abc_df = pd.DataFrame({"Sales": df_product, "Class": ABC})
 st.dataframe(abc_df.head(15))
+
