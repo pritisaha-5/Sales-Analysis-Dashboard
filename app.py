@@ -13,11 +13,12 @@ server = st.sidebar.text_input("Server", r"LAPTOP-RO8RV296\SQLEXPRESS")
 database = st.sidebar.text_input("Database", "SalesDB")
 
 conn_str = (
-"DRIVER={ODBC Driver 17 for SQL Server};"
-f"SERVER={server};"
-f"DATABASE={database};"
-"Trusted_Connection=yes;"
+    "DRIVER={ODBC Driver 17 for SQL Server};"
+    "SERVER=localhost\\SQLEXPRESS;"
+    "DATABASE=SalesDB;"
+    "Trusted_Connection=yes;"
 )
+
 
 # Test connection
 
@@ -83,3 +84,4 @@ cum_percent = df_product.cumsum() / df_product.sum() * 100
 ABC = pd.cut(cum_percent, bins=[0,80,95,100], labels=['A','B','C'])
 abc_df = pd.DataFrame({"Sales": df_product, "Class": ABC})
 st.dataframe(abc_df.head(15))
+
