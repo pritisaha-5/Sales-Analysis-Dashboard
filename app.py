@@ -73,11 +73,13 @@ df = df.dropna()
 
 st.header("Key Metrics")
 if 'Total_Amount' in df.columns and 'Customer_ID' in df.columns:
-total_sales = df['Total_Amount'].sum()
-avg_order_value = df['Total_Amount'].mean()
-total_customers = df['Customer_ID'].nunique()
-repeat_customers = df['Customer_ID'].value_counts()
-repeat_customers = repeat_customers[repeat_customers > 1].count()
+if 'Total_Amount' in df.columns and 'Customer_ID' in df.columns:
+    total_sales = df['Total_Amount'].sum()
+    avg_order_value = df['Total_Amount'].mean()
+    total_customers = df['Customer_ID'].nunique()
+    repeat_customers = df['Customer_ID'].value_counts()
+    repeat_customers = repeat_customers[repeat_customers > 1].count()
+
 
 ```
 col1, col2, col3, col4 = st.columns(4)
@@ -120,6 +122,7 @@ cum_percent = df_product.cumsum() / df_product.sum() * 100
 ABC = pd.cut(cum_percent, bins=[0, 80, 95, 100], labels=['A','B','C'])
 abc_df = pd.DataFrame({"Sales": df_product, "Class": ABC})
 st.dataframe(abc_df.head(15))
+
 
 
 
