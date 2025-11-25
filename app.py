@@ -72,7 +72,7 @@ df = df.dropna()
 # ------------------ Key Metrics ------------------
 
 st.header("Key Metrics")
-if 'Total_Amount' in df.columns and 'Customer_ID' in df.columns:
+
 if 'Total_Amount' in df.columns and 'Customer_ID' in df.columns:
     total_sales = df['Total_Amount'].sum()
     avg_order_value = df['Total_Amount'].mean()
@@ -92,36 +92,36 @@ col4.metric("Repeat Customers", repeat_customers)
 # ------------------ Monthly Sales ------------------
 
 if 'Order_Date' in df.columns and 'Total_Amount' in df.columns:
-st.header("Monthly Sales Trend")
-df['Month'] = df['Order_Date'].dt.to_period('M')
-monthly_sales = df.groupby('Month')['Total_Amount'].sum()
-fig, ax = plt.subplots(figsize=(10,5))
-monthly_sales.plot(ax=ax, title="Monthly Sales Trend")
-st.pyplot(fig)
+    st.header("Monthly Sales Trend")
+    df['Month'] = df['Order_Date'].dt.to_period('M')
+    monthly_sales = df.groupby('Month')['Total_Amount'].sum()
+    fig, ax = plt.subplots(figsize=(10,5))
+    monthly_sales.plot(ax=ax, title="Monthly Sales Trend")
+    st.pyplot(fig)
 
 # ------------------ Top Products ------------------
 
 if 'Product_Name' in df.columns and 'Total_Amount' in df.columns:
-st.header("Top 10 Products")
-top_products = df.groupby('Product_Name')['Total_Amount'].sum().sort_values(ascending=False).head(10)
-st.bar_chart(top_products)
+    st.header("Top 10 Products")
+    top_products = df.groupby('Product_Name')['Total_Amount'].sum().sort_values(ascending=False).head(10)
+    st.bar_chart(top_products)
 
 # ------------------ Regional Performance ------------------
 
 if 'Region' in df.columns and 'Total_Amount' in df.columns:
-st.header("Sales by Region")
-region_perf = df.groupby('Region')['Total_Amount'].sum()
-st.bar_chart(region_perf)
+    st.header("Sales by Region")
+    region_perf = df.groupby('Region')['Total_Amount'].sum()
+    st.bar_chart(region_perf)
 
 # ------------------ ABC Analysis ------------------
 
 if 'Product_Name' in df.columns and 'Total_Amount' in df.columns:
-st.header("ABC Analysis")
-df_product = df.groupby('Product_Name')['Total_Amount'].sum().sort_values(ascending=False)
-cum_percent = df_product.cumsum() / df_product.sum() * 100
-ABC = pd.cut(cum_percent, bins=[0, 80, 95, 100], labels=['A','B','C'])
-abc_df = pd.DataFrame({"Sales": df_product, "Class": ABC})
-st.dataframe(abc_df.head(15))
+    st.header("ABC Analysis")
+    df_product = df.groupby('Product_Name')['Total_Amount'].sum().sort_values(ascending=False)
+    cum_percent = df_product.cumsum() / df_product.sum() * 100
+    ABC = pd.cut(cum_percent, bins=[0, 80, 95, 100], labels=['A','B','C'])
+    abc_df = pd.DataFrame({"Sales": df_product, "Class": ABC})
+    st.dataframe(abc_df.head(15))
 
 
 
