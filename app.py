@@ -19,20 +19,21 @@ f"DATABASE={database};"
 "Trusted_Connection=yes;"
 )
 
+# Test connection
+
 try:
-    conn = pyodbc.connect(conn_str)
-    st.success("Connected to database successfully!")
+    conn = pyodbc.connect(conn_str, timeout=5)
+    st.success("Connected to SQL Server successfully!")
 except Exception as e:
     st.error(f"Connection failed: {e}")
-    st.stop()
-
+    st.stop()  # Stop the app if connection fails
 
 # ------------------ Load Data ------------------
 
 query = "SELECT * FROM MyTable;"
 df = pd.read_sql(query, conn)
 
-# Fix columns
+# Fix column names and data
 
 df.columns = df.columns.str.strip().str.replace(" ", "_")
 df['Order_Date'] = pd.to_datetime(df['Order_Date'])
@@ -82,4 +83,3 @@ cum_percent = df_product.cumsum() / df_product.sum() * 100
 ABC = pd.cut(cum_percent, bins=[0,80,95,100], labels=['A','B','C'])
 abc_df = pd.DataFrame({"Sales": df_product, "Class": ABC})
 st.dataframe(abc_df.head(15))
-
